@@ -1,5 +1,4 @@
-<form action="{{ url_for('getSummonerName')}}" method="post">
+<form action="{{ url_for('tellingSummonerStats')}}" method="get">
   <label for="summonerName">Summoner Name:</label>
-  <input type="text" id="summonerName" name="sname" placeholder="summonerName">
+  <input type="text" id="summonerName" name="summonerName" placeholder="summonerName" required>
   <button type="submit">Done</button>
-  
