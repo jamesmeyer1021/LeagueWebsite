@@ -1,6 +1,7 @@
 import requests
 import secret
 
+#function to check the level of the Summoner
 def levelCheck(summonerName):
     r = requests.get(f'https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/{summonerName}?api_key={secret.APIKEY}')
 
