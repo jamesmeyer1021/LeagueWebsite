@@ -6,9 +6,8 @@ def levelCheck(summonerName):
 
     if r.status_code != 200:
         return "That wasn't it"        
-
+    
     formattedData = r.json()
-
     level = formattedData.get("summonerLevel")
 
     if level > 100:
